@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        .navbar {
+            background-color: rgb(94, 94, 94);
+        }
+
+        .main {
+            background-color: rgb(148, 148, 148);
+        }
+        .left {
+            background-color: rgb(160, 157, 157);
+        }
+
+        .footer {
+            background-color:  rgb(73, 70, 75);
+        }
+        
+        /* phone layout */
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .main {
+                grid-column: 1/13;
+                grid-row: 4/10;
+            }
+
+            .left {
+                grid-column: 1/13;
+                grid-row: 1/4;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+        }
+        /* tablet view - layout */
+        @media only screen and (min-width: 601px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .main {
+                grid-column: 1/13;
+                grid-row: 5/10;
+            }
+
+            .left {
+                grid-row: 2/5;
+                grid-column: 1/13;
+            }
+
+            .footer {
+                grid-column: 1/13;
+                grid-row: 10/11;
+            }
+        }
+ /* desktop/laptop layout */
+        @media only screen and (min-width: 992px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 10vh);
+                gap: 5px;
+            }
+
+            .navbar {
+                grid-row: 1/2;
+                grid-column: 1/13;
+            }
+
+            .left {
+                grid-column: 1/4;
+                grid-row: 2/10;
+            }
+
+            .main {
+                grid-column: 4/13;
+                grid-row: 2/10;
+            }
+
+            .footer {
+                grid-column: 1/13;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>Personal Profile</h1>
+        </div>
+
+        <div class="main">
+        <h1>Short Introduction</h1>
+            <p>Hi, I’m Brian Relado Manato, I live in Brgy. Inayawan, Cauayan, Negros Occidental. I love EUT, Eat,Unwind,Travel and Im an Ambivert person </p>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Creativty</li>
+                    <li>Writing</li>
+                    <li>Marketing</li>
+                </ul>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Watching Anime</li>
+                    <li>Playing Onlines Games</li>
+                    <li>Typing</li>
+                </ul>
+                <h2>Educational Background</h2>
+                <ul>
+                    <li>NONE</li>
+                </ul>
+                
+                <h2>Future Plan/ Goals</h2>
+                <p>To make my Mama proud </p>
+                
+        </div>
+
+        <div class="left">
+                <img src="image/brian.jpg" alt="" 
+            style="width: 300px;height:300px;">
+
+        </div>
+        
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+    </div>
+</body>
+</html>
